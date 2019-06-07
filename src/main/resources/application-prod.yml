@@ -1,23 +1,13 @@
 spring:
   profiles:
-    active: dev
+    active: prod
   datasource:
     driver-class-name: oracle.jdbc.driver.OracleDriver
     username: DBUserName
     password: DBPassword
     url: jdbc:oracle:thin:@//host:port/dbname
-  jpa:
-    database: default
-    open-in-view: false
-    show-sql: true
 
-server:
-  port: 8080
-  tomcat:
-    accesslog:
-      enabled: true
-      directory: logs
-      pattern: common
 
-log4j:
-  rootLogger: INFO, CATALINA
+
+
+

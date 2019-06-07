@@ -1,0 +1,16 @@
+server:
+  port: 8080
+  tomcat:
+    accesslog:
+      enabled: true
+      directory: logs
+      pattern: common
+
+log4j:
+  rootLogger: INFO, CATALINA
+
+spring:
+  jpa:
+    database: default
+    open-in-view: false
+    show-sql: true
